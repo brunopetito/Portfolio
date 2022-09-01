@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.elipse {
+  background-color: #080808;
+  border-radius: 50%;
+  width: 100vh;
+  height: 100vh;
+  margin-top: -80vh;
+  z-index: -10;
+}
