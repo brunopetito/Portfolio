@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Card from './components/Card'
 import Projetos from './components/Projetos'
 import Footer from './components/Footer'
+import Sobre from './components/Sobre'
 
 
 
@@ -14,7 +15,7 @@ function App() {
       <Header></Header>
       <Card></Card>
       <Projetos></Projetos>
-
+      <Sobre/>
       </div>
    
         <Footer />
