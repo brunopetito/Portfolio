@@ -1,6 +1,6 @@
 import styles from "./Card.module.css"
 import euURL from "../assets/eu.png"
-import githubURL from "../assets/github.png"
+import githubURL from "../assets/github.svg"
 import htmlURL from "../assets/html.svg"
 import jsURL from "../assets/js.svg"
 import cssURL from "../assets/css.svg"
@@ -15,7 +15,7 @@ import gitURL from "../assets/git.svg"
 function Card(){
   return(
     <>
-      <div className={`${styles.card} slide-in-blurred-bottom text-[#2F2F2F]`} >
+      <div className={`${styles.card} slide-in-blurred-left text-[#2F2F2F]`} >
         <div className=" w-full flex flex-col align-center">
          <p className="text-xl font-display p-7 text-center ">Desenvolvedor front-end</p>
          <div className=" flex justify-center">
@@ -27,9 +27,9 @@ function Card(){
             className="flex justify-center align-middle"
             >
               <div className="m-auto ">
-              <img src={githubURL} alt=" " />
+              <img src={githubURL} alt=" " className="w-4 h-4" />
               </div>
-              <p className="pl-[0.1rem] text-sm">brunopetito</p>
+              <p className="pl-[0.1rem] text-sm font-bold">brunopetito</p>
               
 
             </a>

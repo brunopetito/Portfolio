@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import Header from './components/Header'
 import Card from './components/Card'
+import Projetos from './components/Projetos'
+import Footer from './components/Footer'
+
+
 
 function App() {
-
+ 
   return (
-    <>
-    <Header></Header>
-    <Card></Card>
+    <div className='flex flex-col min-h-screen justify-center align-middle'>
+      <div className='flex-1 '>
+      <Header></Header>
+      <Card></Card>
+      <Projetos></Projetos>
 
-    </>
+      </div>
+   
+        <Footer />
+   
+    </div>
   )
 }
 

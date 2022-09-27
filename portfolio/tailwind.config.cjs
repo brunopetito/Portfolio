@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'display':['Comfortaa']
+      'display':['Comfortaa'],
+      'content':['Roboto']
     },
   },
   plugins: [],
