@@ -16,11 +16,11 @@ export default function CardProjeto({url,urlLogo,description,tecnologies,urlVerc
   
 return (
   <>
-    <div className="flex w-[90%] m-auto  align-middle justify-center mt-8 border shadow-sm p-2 rounded-lg">
-      <div className="flex flex-col align-center justify-center"> 
-      {urlLogo && <img className="self-center mb-4 w-15 " src={urlLogo} alt="" />}
+    <div className="flex w-[90%] m-auto  align-middle justify-center mt-8 border shadow-sm p-2 rounded-lg ">
+      <div className="flex flex-col align-center justify-end sm:h-[550px]"> 
+      {urlLogo && <img className="self-center mb-4 w-15 sm:w-20 sm:mb-14 " src={urlLogo} alt="" />}
         
-      {tittle && <p className="text-center font-bold mb-2 font-display text-xl">{tittle}</p>} 
+      {tittle && <p className="text-center font-bold  font-display text-2xl sm:mb-16">{tittle}</p>} 
         
         <div>
           <p className="font-content ">{description}</p>

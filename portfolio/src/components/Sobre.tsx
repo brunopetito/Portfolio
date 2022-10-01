@@ -1,9 +1,10 @@
 import { UserList } from "phosphor-react";
 import euURL from '../assets/eu.jpg'
+import SobreDesktop from "./desktop/SobreDesktop";
 export default function Sobre(){
   return(
-    <>
-      <div className=" bg-zinc-900 text-zinc-50 flex flex-col justify-center align-middle  ">
+    <div id='sobreRef'>
+      <div className=" bg-zinc-900  text-zinc-50 flex flex-col justify-center align-middle sm:hidden  ">
         <div className="flex align-middle justify-center gap-2 p-2 mb-2">
           <p className="font-display text-2xl ">Sobre mim</p>
           <UserList size={24} color="rgb(250 250 250 / var(--tw-text-opacity))" className="self-center" />
@@ -20,6 +21,10 @@ export default function Sobre(){
         </div>
 
       </div>
-    </>
+      <div className="hidden sm:block">
+          <SobreDesktop/>
+      </div>
+
+    </div>
   )
 }

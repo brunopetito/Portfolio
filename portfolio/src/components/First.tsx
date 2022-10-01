@@ -7,6 +7,7 @@ import cssURL from "../assets/css.svg"
 import reactURL from "../assets/react.svg"
 import tailwindURL from "../assets/tailwind.svg"
 import gitURL from "../assets/git.svg"
+import PrimeiraSectionDesktop from "./desktop/PrimeiraSectionDesktop"
 
 
 
@@ -15,7 +16,7 @@ import gitURL from "../assets/git.svg"
 function Card(){
   return(
     <>
-      <div className={`${styles.card} slide-in-blurred-left text-[#2F2F2F]`} >
+      <div className={`${styles.card} slide-in-blurred-left text-[#2F2F2F] sm:hidden `} >
         <div className=" w-full flex flex-col align-center">
          <p className="text-xl font-display p-7 text-center ">Desenvolvedor front-end</p>
          <div className=" flex justify-center">
@@ -73,6 +74,9 @@ function Card(){
         </div>
       </div>
 
+      <div className="hidden sm:block">
+        <PrimeiraSectionDesktop/>
+      </div>
     </>
   )
 }
