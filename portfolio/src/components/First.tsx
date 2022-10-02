@@ -1,5 +1,5 @@
 import styles from "./Card.module.css"
-import euURL from "../assets/eu.png"
+import euURL from "../assets/eu3.jpg"
 import githubURL from "../assets/github.svg"
 import htmlURL from "../assets/html.svg"
 import jsURL from "../assets/js.svg"
@@ -8,7 +8,7 @@ import reactURL from "../assets/react.svg"
 import tailwindURL from "../assets/tailwind.svg"
 import gitURL from "../assets/git.svg"
 import PrimeiraSectionDesktop from "./desktop/PrimeiraSectionDesktop"
-
+import {FileArrowDown} from 'phosphor-react'
 
 
 
@@ -17,12 +17,13 @@ function Card(){
   return(
     <>
       <div className={`${styles.card} slide-in-blurred-left text-[#2F2F2F] sm:hidden `} >
-        <div className=" w-full flex flex-col align-center">
-         <p className="text-xl font-display p-7 text-center ">Desenvolvedor front-end</p>
+        <div className=" w-full flex flex-col align-center pb-3">
+         <p className="text-xl font-display p-3 text-center ">Desenvolvedor front-end</p>
          <div className=" flex justify-center">
-          <img src={euURL} alt="foto bruno petito (muito bonito)" />
+          <img src={euURL} alt="foto bruno petito (muito bonito)"
+          className="w-24 h-24 rounded-full" />
          </div>
-         <div className="flex justify-center mt-1">
+         <div className="flex justify-center ">
           
             <a href="https://github.com/brunopetito"
             className="flex justify-center align-middle"
@@ -61,15 +62,21 @@ function Card(){
           <img src={gitURL} alt="" />
 
           </div>
-          
-        
-         
-         
-        
-
-
          </div>
-         
+
+         <a
+             className="self-center  bg-[#B6B0FF] w-[136px]  p-1 rounded sm:hover:bg-[#9790E5] text-[#27217A] font-bold text-sm"
+             href="cv.pdf" 
+             download>
+              <div
+              className="flex justify-center items-center gap-2"
+              
+              >
+                Download CV
+                <FileArrowDown size={24} color="#27217A" />
+
+             </div> 
+          </a>
 
         </div>
       </div>

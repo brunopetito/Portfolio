@@ -1,6 +1,6 @@
 import foto from '../../assets/eu.jpg'
 import { UserList } from "phosphor-react";
-import bgOld from '../../assets/bg-old.jpg'
+
 export default function SobreDesktop(){
   return(
     <div className=" text-zinc-50 bg-old bg-center">

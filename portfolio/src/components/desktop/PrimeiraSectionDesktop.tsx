@@ -31,13 +31,13 @@ export default function PrimeiraSectionDesktop(){
 
             <a
              className="self-start  bg-[#B6B0FF] w-fit mt-8 p-3 rounded sm:hover:bg-[#9790E5] text-[#27217A] font-bold"
-             href="../../assets/css.svg" 
+             href="cv.pdf" 
              download>
               <div
               className="flex justify-center items-center gap-2"
               
               >
-                Dowload CV
+                Download CV
                 <FileArrowDown size={24} color="#27217A" />
 
              </div> </a>
