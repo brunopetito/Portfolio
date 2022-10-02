@@ -11,7 +11,7 @@ export default function SobreDesktop(){
         </div>
       
       <div className='flex items-center justify-center gap-x-8 mb-8 '>
-        <img src={foto} alt="Foto do cara mais bonito do RJ " className=' max-w-md' />
+        <img src={foto} alt="Foto do cara mais bonito do RJ " className=' max-w-md w-1/2' />
           <p className="font-content px-4 w-1/3 leading-7 text-lg ">Olá! me chamo Bruno Petito, e estive lecionando Matemática por 2 anos. Pela minha paixão por computação, decidi recomeçar e atualmente estudo Sistemas de Computação.
                 Hoje possuo conhecimentos em <span className='font-bold text-violet-300'>HTML, CSS, React, Typescript, Git, Github e Tailwind.</span> E continuo estudando algumas outras tecnologias como Node.js e UX/UI design.
                 Busco oportunidades para atuar na área de Desenvolvimento Front-End.</p>
